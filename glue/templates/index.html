@@ -1,3 +1,4 @@
+{% load static swampdragon_tags %}
 <!DOCTYPE html>
 <html lang="en" ng-app="myApp">
   <head>
@@ -10,11 +11,6 @@
 
     <!-- Bootstrap core CSS -->
     <link href="/client/libraries/bootstrap-3.3.1/dist/css/bootstrap.css" rel="stylesheet">
-
-    <!-- Custom styles for this template -->
-    <link href="/client/libraries/bootstrap-3.3.1/docs/examples/jumbotron/jumbotron.css" rel="stylesheet">
-    <script src="/client/libraries/bootstrap-3.3.1/docs/assets/js/ie-emulation-modes-warning.js"></script>
-    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
   </head>
 
   <body>
@@ -33,13 +29,16 @@
     <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> -->
     <script src="/client/libraries/jquery.js"></script>
     <script src="/client/libraries/bootstrap-3.3.1/dist/js/bootstrap.js"></script>
-    <script src="/client/libraries/angular.min.js"></script>
 
-    <!-- <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.6/angular-route.js"></script> -->
+    <script src="/client/libraries/angular.min.js"></script>
     <script src="/client/libraries/angular-route.js"></script>
     <script src="/client/libraries/angular-resource.js"></script>
-    <script src="/client/scripts/app.js"></script>
+    {% swampdragon_settings %}
+    <script src="/client/libraries/swampdragon/swampdragon.js"></script>
+    <script src="/client/libraries/swampdragon/datamapper.js"></script>
+    <script src="/client/libraries/swampdragon/angularServices.js"></script>
 
+    <script src="/client/scripts/app.js"></script>
     <script src="/client/scripts/controllers/homeController.js"></script>
     <script src="/client/scripts/controllers/authController.js"></script>
     <script src="/client/scripts/controllers/registerController.js"></script>

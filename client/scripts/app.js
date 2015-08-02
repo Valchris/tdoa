@@ -1,7 +1,7 @@
 /* App module */
 
 
-var app = angular.module('myApp', ['ngRoute']);
+var app = angular.module('myApp', ['SwampDragonServices', 'ngRoute']);
 
 app.config(['$routeProvider', '$locationProvider',
   function($routeProvider, $locationProvider) {
