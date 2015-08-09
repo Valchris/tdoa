@@ -1,1 +1,8 @@
 {{ gameRoom }}
+
+<ul class="player-info">
+    <li ng-repeat="player in gameRoom.users">
+        <div>Player: {{ player.user.username }}</div>
+        <div>Current Life: {{ player.currentLife }}</div>
+    </li>
+</ul>
