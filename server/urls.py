@@ -12,6 +12,7 @@ urlpatterns = [
     url(r'^api/user/signout/', view=user_signout),
     url(r'^api/user/signin/', view=user_signin),
     url(r'^api/user/register/', view=user_register),
+    url(r'^api/gameroom/startround', view=start_round),
     url(r'^admin', include(admin.site.urls)),
     url(r'^', AngularView.as_view()),
 

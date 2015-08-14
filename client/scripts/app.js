@@ -24,3 +24,7 @@ app.config(['$httpProvider', function($httpProvider) {
     $httpProvider.defaults.xsrfCookieName = 'csrftoken';
     $httpProvider.defaults.xsrfHeaderName = 'X-CSRFToken';
 }]);
+
+app.config(['$httpProvider', function($httpProvider) {
+    $httpProvider.interceptors.push('httpRequestInterceptor');
+}]);

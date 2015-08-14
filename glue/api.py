@@ -62,3 +62,9 @@ def user_register(request):
         return user_signin(request)
 
     return HttpResponseNotAllowed()
+
+
+def start_round(request):
+    if request.method == "POST" and request.user is not None:
+        return JSONResponse({'round': 1})
+    return HttpResponseNotAllowed()
